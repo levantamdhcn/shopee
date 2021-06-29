@@ -6,10 +6,11 @@
     --header-height: 120px;
     --navbar-height: 33px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --header__sort-bar-height: 46px;
 }
 
 * {
-    box-sizing: inherit;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -32,6 +33,9 @@ html {
 
 .pd-left-10 {
     padding-left: 10px;
+}
+.mr-top-20 {
+    margin-top: 20px;
 }
 
 .mr-4 {
@@ -92,6 +96,9 @@ html {
 }
 .bg-grey {
     background-color: #fbfbfb;
+}
+.header__sort-bar-item--active .header__sort-bar-link{
+    color: var(--primary-color);
 }
 
 @keyframes fadeIn {
